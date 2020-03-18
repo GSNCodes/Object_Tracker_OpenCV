@@ -9,9 +9,9 @@ import cv2
 
 # define the lower and upper boundaries of the color of the object to be tracked.
 
-color_in_bgr = np.uint8([[[255,0,0]]]) #here insert the bgr values which you want to convert to hsv
+color_in_bgr = np.uint8([[[255,0,0]]]) # Insert the bgr values of the color which you want to convert to hsv
 color_in_hsv = cv2.cvtColor(color_in_bgr, cv2.COLOR_BGR2HSV)
-print(color_in_hsv)
+# print(color_in_hsv)
 
 color_lower = (int(color_in_hsv[0][0][0]-10),50,50)
 color_upper = (int(color_in_hsv[0][0][0]+10),255,255)
@@ -28,7 +28,7 @@ while True:
     if frame is None:
         break
 
-    # frame = imutils.resize(frame, width=600)
+  
     blurred = cv2.GaussianBlur(frame, (11, 11), 0)
     hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
     # kernel = np.ones((5, 5), np.uint8)
@@ -53,7 +53,7 @@ while True:
 
         # Specify the minimum size
         if radius > 5:
-            #draw the circle
+            #Draw the circle
             cv2.circle(frame, (int(x), int(y)), int(radius),
                 (0, 255, 255), 2)
             cv2.circle(frame, center, 5, (0, 0, 255), -1)

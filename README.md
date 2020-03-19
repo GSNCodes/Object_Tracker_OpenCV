@@ -19,7 +19,7 @@ The red line you see is the trail of the path that the object has left behind.
 * numpy
 
 ### Output
-<img src="https://github.com/GSNCodes/Object_Tracker_OpenCV/edit/master/output.gif">
+<img src="https://github.com/GSNCodes/Object_Tracker_OpenCV/blob/master/Output.gif">
 
 
 If you have any queries, let me know !

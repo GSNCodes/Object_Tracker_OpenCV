@@ -18,7 +18,8 @@ The red line you see is the trail of the path that the object has left behind.
 * collections
 * numpy
 
-
+### Output
+<img src="https://github.com/GSNCodes/Object_Tracker_OpenCV/edit/master/output.gif">
 
 
 If you have any queries, let me know !
